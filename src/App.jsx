@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
 import CategorySection from './components/CategorySection';
-import FeatureSection from './components/FeatureSection';
 import Footer from './components/Footer';
 
 const categories = [
