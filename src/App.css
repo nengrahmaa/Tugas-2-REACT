@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles (opsional) */
+@layer components {
+  .banner {
+    @apply flex justify-between items-center bg-white px-8 py-12 border-b border-gray-200;
+  }
+
+  .banner-text h3 {
+    @apply text-pink-500 text-sm;
+  }
+
+  .banner-text h2 {
+    @apply text-3xl font-semibold my-2;
+  }
+
+  .banner-btn {
+    @apply bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition;
+  }
+
+  .feature-section {
+    @apply flex justify-around flex-wrap gap-6 py-12 bg-gray-50;
+  }
+
+  .feature-box {
+    @apply max-w-xs text-center;
+  }
+
+  .feature-box h4 {
+    @apply text-blue-900 font-semibold text-lg mb-2;
+  }
+
+  .filter-bar {
+    @apply flex justify-center items-center gap-4 p-4 bg-white border-b border-gray-200;
+  }
+
+  .filter-bar select,
+  .filter-bar input {
+    @apply px-4 py-2 border border-gray-300 rounded;
+  }
+
+  .filter-btn {
+    @apply bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition;
+  }
+}
+
+/* Animasi opsional */
+@layer utilities {
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .logo-spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
